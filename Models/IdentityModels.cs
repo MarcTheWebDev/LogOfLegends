@@ -20,7 +20,8 @@ namespace LogOfLegends.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext()
+    public DbSet<Game> Games { get; set; }
+    public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
