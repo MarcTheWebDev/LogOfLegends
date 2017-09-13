@@ -12,6 +12,7 @@ namespace LogOfLegends.Models
     public int LP { get; set; }
     public string Score { get; set; }
     public string Result { get; set; }
+    public string Champion { get; set; }
     public string Role { get; set; }
     public string Description { get; set; }
 
