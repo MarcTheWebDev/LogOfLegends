@@ -203,6 +203,10 @@
     <Compile Include="Migrations\201709132105584_AddChampionPropToGameModel.Designer.cs">
       <DependentUpon>201709132105584_AddChampionPropToGameModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709132146275_AddDateEnteredPropToGameModel.cs" />
+    <Compile Include="Migrations\201709132146275_AddDateEnteredPropToGameModel.Designer.cs">
+      <DependentUpon>201709132146275_AddDateEnteredPropToGameModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Game.cs" />
@@ -295,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709132105584_AddChampionPropToGameModel.resx">
       <DependentUpon>201709132105584_AddChampionPropToGameModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709132146275_AddDateEnteredPropToGameModel.resx">
+      <DependentUpon>201709132146275_AddDateEnteredPropToGameModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

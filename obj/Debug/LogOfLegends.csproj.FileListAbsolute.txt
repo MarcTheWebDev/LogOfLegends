@@ -97,3 +97,4 @@ c:\users\tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOf
 c:\users\tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOfLegends\obj\Debug\LogOfLegends.Migrations.InitialModel.resources
 c:\users\tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOfLegends\obj\Debug\LogOfLegends.csproj.GenerateResource.Cache
 C:\Users\Tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOfLegends\obj\Debug\LogOfLegends.Migrations.AddChampionPropToGameModel.resources
+C:\Users\Tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOfLegends\obj\Debug\LogOfLegends.Migrations.AddDateEnteredPropToGameModel.resources

@@ -4,15 +4,26 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using LogOfLegends.Models;
-
+using System.Data.Entity;
 namespace LogOfLegends.Controllers
 {
     public class LogsController : Controller
     {
-        // GET: Logs
-        public ActionResult PreviousLogs()
+    private ApplicationDbContext _context;
+
+    public LogsController() {
+      _context = new ApplicationDbContext();
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+      _context.Dispose();
+    }
+    // GET: Logs
+    public ActionResult PreviousLogs()
         {
-            return View();
+
+      return View(_context.Games.Where(c => c.Id != 0));
         }
 
     public ActionResult Add() {
@@ -20,6 +31,9 @@ namespace LogOfLegends.Controllers
     }
 
     public ActionResult SaveGame(Game addedGame) {
+      addedGame.DateEntered = DateTime.Now;
+      _context.Games.Add(addedGame);
+      _context.SaveChanges();
       return RedirectToAction("PreviousLogs");
     }
     }

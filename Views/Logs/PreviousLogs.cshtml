@@ -1,7 +1,14 @@
-﻿
+﻿@model IEnumerable<LogOfLegends.Models.Game>
 @{
     ViewBag.Title = "PreviousLogs";
 }
 
 <h2>Your Previous Logs</h2>
 
+@foreach (var item in Model)
+{
+  <ul>
+    <li>@item.Description</li>
+  </ul>
+  
+}
