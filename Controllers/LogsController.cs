@@ -26,14 +26,30 @@ namespace LogOfLegends.Controllers
       return View(_context.Games.Where(c => c.Id != 0));
         }
 
-    public ActionResult Add() {
-      return View();
+    public ActionResult ChangeGame(int id = 0) {
+      if (id == 0)
+      {
+      }
+      else
+      {
+        var game = _context.Games.Single(g => g.Id == id);
+        return View("LogForm", game);
+      }
+      return View("LogForm");
     }
 
-    public ActionResult SaveGame(Game addedGame) {
-      addedGame.DateEntered = DateTime.Now;
-      _context.Games.Add(addedGame);
-      _context.SaveChanges();
+    public ActionResult SaveGame(Game game) {
+      if (game.Id == 0)
+      {
+        game.DateEntered = DateTime.Now;
+        _context.Games.Add(game);
+        _context.SaveChanges();
+      }
+      else {
+       var editedGame =  _context.Games.Single(g => g.Id == game.Id);
+        TryUpdateModel(editedGame);
+      }
+     
       return RedirectToAction("PreviousLogs");
     }
     }

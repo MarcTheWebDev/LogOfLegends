@@ -5,10 +5,16 @@
 
 <h2>Your Previous Logs</h2>
 
-@foreach (var item in Model)
+@foreach (var game in Model)
 {
   <ul>
-    <li>@item.Description</li>
+    <li>@game.Rank</li>
+    <li> @game.LP</li>
+    <li> @game.Champion</li>
+    <li> @game.Role</li>
+    <li>@game.Description</li>
   </ul>
-  
+  @Html.ActionLink("Edit Game","ChangeGame","Logs",routeValues: new {id = game.Id }, htmlAttributes: new {@class = "btn btn-primary" })
+  <hr />
+
 }

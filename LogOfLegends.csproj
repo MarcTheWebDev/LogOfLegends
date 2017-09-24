@@ -207,6 +207,10 @@
     <Compile Include="Migrations\201709132146275_AddDateEnteredPropToGameModel.Designer.cs">
       <DependentUpon>201709132146275_AddDateEnteredPropToGameModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709232007570_AlterRankToBeString.cs" />
+    <Compile Include="Migrations\201709232007570_AlterRankToBeString.Designer.cs">
+      <DependentUpon>201709232007570_AlterRankToBeString.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Game.cs" />
@@ -272,7 +276,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Logs\Add.cshtml" />
+    <Content Include="Views\Logs\LogForm.cshtml" />
     <Content Include="Views\Logs\PreviousLogs.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -302,6 +306,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709132146275_AddDateEnteredPropToGameModel.resx">
       <DependentUpon>201709132146275_AddDateEnteredPropToGameModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709232007570_AlterRankToBeString.resx">
+      <DependentUpon>201709232007570_AlterRankToBeString.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

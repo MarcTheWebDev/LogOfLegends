@@ -1,0 +1,37 @@
+﻿@model LogOfLegends.Models.Game
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add</h2>
+
+@using (Html.BeginForm("SaveGame", "Logs"))
+{
+@Html.DropDownList("League", new SelectList(new List<string> { "Bronze", "Silver", "Gold", "Platinum", "Diamond", "Master", "Challenger" }), "Select Your League",new {@class = "league" });
+  @Html.DropDownList("Division", new SelectList(new List<string> { "I","II","III","IV","V" }), "Select Your Division", new { @class = "division" });
+
+  @Html.LabelFor(m => m.LP)
+  @Html.TextBoxFor(m => m.LP)
+
+  @Html.LabelFor(m => m.Score)
+  @Html.TextBoxFor(m => m.Score)
+
+  @Html.RadioButtonFor(m => m.Result,"win") <text>Win</text>
+  @Html.RadioButtonFor(m => m.Result, "loss") <text>Loss</text>
+
+  @Html.LabelFor(m => m.Champion)
+  @Html.TextBoxFor(m => m.Champion)
+
+  @Html.LabelFor(m => m.Role)
+  @Html.TextBoxFor(m => m.Role)
+
+  @Html.LabelFor(m => m.Description)
+  @Html.TextAreaFor(m => m.Description)
+
+  @Html.HiddenFor(m => m.Id);
+  @Html.HiddenFor(m => m.Rank,new {id = "rank" });
+
+  
+  <button class="btn btn-success submit">Submit</button>
+}
+

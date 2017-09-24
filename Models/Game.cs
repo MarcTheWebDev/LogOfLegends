@@ -8,7 +8,7 @@ namespace LogOfLegends.Models
   public class Game
   {
     public int Id { get; set; }
-    public int Rank { get; set; }
+    public string Rank { get; set; }
     public int LP { get; set; }
     public string Score { get; set; }
     public string Result { get; set; }

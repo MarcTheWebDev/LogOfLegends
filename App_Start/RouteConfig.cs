@@ -16,7 +16,7 @@ namespace LogOfLegends
       routes.MapRoute(
           name: "Default",
           url: "{controller}/{action}/{id}",
-          defaults: new { controller = "Logs", action = "Add", id = UrlParameter.Optional }
+          defaults: new { controller = "Logs", action = "ChangeGame", id = UrlParameter.Optional }
       );
     }
   }
