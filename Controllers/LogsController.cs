@@ -47,7 +47,17 @@ namespace LogOfLegends.Controllers
       }
       else {
        var editedGame =  _context.Games.Single(g => g.Id == game.Id);
-        TryUpdateModel(editedGame);
+
+        editedGame.Champion = game.Champion;
+        editedGame.Description = game.Description;
+        editedGame.Division = game.Division;
+        editedGame.League = game.League;
+        editedGame.LP = game.LP;
+        editedGame.Role = game.Role;
+        editedGame.Score = game.Score;
+        editedGame.wasWin = game.wasWin;
+
+        _context.SaveChanges();
       }
      
       return RedirectToAction("PreviousLogs");

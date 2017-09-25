@@ -40,16 +40,5 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-  <script>
-  $(document).ready(function () {
-    $(".submit").click(function () {
-      var league = $(".league").val();
-      var division = $(".division").val();
-      $("#rank").val(league + " " + division);
-
-      alert(league + " " + division);
-    })
-  })
-  </script>
 </body>
 </html>

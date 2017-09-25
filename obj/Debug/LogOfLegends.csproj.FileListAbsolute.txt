@@ -99,3 +99,5 @@ c:\users\tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOf
 C:\Users\Tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOfLegends\obj\Debug\LogOfLegends.Migrations.AddChampionPropToGameModel.resources
 C:\Users\Tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOfLegends\obj\Debug\LogOfLegends.Migrations.AddDateEnteredPropToGameModel.resources
 C:\Users\Tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOfLegends\obj\Debug\LogOfLegends.Migrations.AlterRankToBeString.resources
+C:\Users\Tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOfLegends\obj\Debug\LogOfLegends.Migrations.ChangeGameRankToLeagueAndDivision.resources
+C:\Users\Tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOfLegends\obj\Debug\LogOfLegends.Migrations.changeResultGamePropertyToWasWin.resources

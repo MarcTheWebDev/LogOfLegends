@@ -7,12 +7,14 @@
 
 @foreach (var game in Model)
 {
+   string rank = game.League + " " + game.Division;
   <ul>
-    <li>@game.Rank</li>
+    <li>@rank</li>
     <li> @game.LP</li>
     <li> @game.Champion</li>
     <li> @game.Role</li>
     <li>@game.Description</li>
+    <li>@game.wasWin</li>
   </ul>
   @Html.ActionLink("Edit Game","ChangeGame","Logs",routeValues: new {id = game.Id }, htmlAttributes: new {@class = "btn btn-primary" })
   <hr />
