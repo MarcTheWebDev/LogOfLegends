@@ -37,9 +37,12 @@ namespace LogOfLegends.Controllers
       }
       return View("LogForm");
     }
-
+    [ValidateAntiForgeryToken]
     public ActionResult SaveGame(Game game) {
-      if (game.Id == 0)
+      if (!ModelState.IsValid) {
+        return View("LogForm", game);
+      }
+      if (game.Id == 0 || game.Id == null)
       {
         game.DateEntered = DateTime.Now;
         _context.Games.Add(game);

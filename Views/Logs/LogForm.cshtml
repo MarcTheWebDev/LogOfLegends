@@ -4,11 +4,11 @@
 }
 @Scripts.Render("~/bundles/jquery")
 <h2>Add</h2>
-
+@Html.ValidationSummary()
 @using (Html.BeginForm("SaveGame", "Logs"))
 {
   @Html.DropDownListFor(m => m.League, new SelectList(new List<string> { "Bronze", "Silver", "Gold", "Platinum", "Diamond", "Master", "Challenger" }),"Select Your League", new { @class = "league" });
-  @Html.DropDownListFor(m=> m.Division, new SelectList(new List<string> { "I", "II", "III", "IV", "V" }), "Select Your Division", new { @class = "division" });
+  @Html.DropDownListFor(m => m.Division, new SelectList(new List<string> { "I", "II", "III", "IV", "V" }), "Select Your Division", new { @class = "division" });
 
   @Html.LabelFor(m => m.LP)
   @Html.TextBoxFor(m => m.LP)
@@ -29,7 +29,7 @@
   @Html.TextAreaFor(m => m.Description)
 
   @Html.HiddenFor(m => m.Id);
-
+  @Html.AntiForgeryToken()
 
   <button class="btn btn-success submit">Submit</button>
 }
