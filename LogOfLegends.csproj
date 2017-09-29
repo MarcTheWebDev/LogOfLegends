@@ -219,6 +219,14 @@
     <Compile Include="Migrations\201709241836291_changeResultGamePropertyToWasWin.Designer.cs">
       <DependentUpon>201709241836291_changeResultGamePropertyToWasWin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709290332578_ChangeGameValidation.cs" />
+    <Compile Include="Migrations\201709290332578_ChangeGameValidation.Designer.cs">
+      <DependentUpon>201709290332578_ChangeGameValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709290343550_ChangeGameValidationToAllRequired.cs" />
+    <Compile Include="Migrations\201709290343550_ChangeGameValidationToAllRequired.Designer.cs">
+      <DependentUpon>201709290343550_ChangeGameValidationToAllRequired.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Game.cs" />
@@ -323,6 +331,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709241836291_changeResultGamePropertyToWasWin.resx">
       <DependentUpon>201709241836291_changeResultGamePropertyToWasWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709290332578_ChangeGameValidation.resx">
+      <DependentUpon>201709290332578_ChangeGameValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709290343550_ChangeGameValidationToAllRequired.resx">
+      <DependentUpon>201709290343550_ChangeGameValidationToAllRequired.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

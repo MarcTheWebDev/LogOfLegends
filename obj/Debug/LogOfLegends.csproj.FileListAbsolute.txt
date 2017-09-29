@@ -101,3 +101,5 @@ C:\Users\Tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOf
 C:\Users\Tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOfLegends\obj\Debug\LogOfLegends.Migrations.AlterRankToBeString.resources
 C:\Users\Tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOfLegends\obj\Debug\LogOfLegends.Migrations.ChangeGameRankToLeagueAndDivision.resources
 C:\Users\Tank3\onedrive\documents\visual studio 2017\Projects\LogOfLegends\LogOfLegends\obj\Debug\LogOfLegends.Migrations.changeResultGamePropertyToWasWin.resources
+C:\Users\Tank3\OneDrive\Documents\Visual Studio 2017\Projects\LogOfLegends\LogOfLegends\obj\Debug\LogOfLegends.Migrations.ChangeGameValidation.resources
+C:\Users\Tank3\OneDrive\Documents\Visual Studio 2017\Projects\LogOfLegends\LogOfLegends\obj\Debug\LogOfLegends.Migrations.ChangeGameValidationToAllRequired.resources

@@ -2,7 +2,7 @@
 @{
   ViewBag.Title = "Add";
 }
-@Scripts.Render("~/bundles/jquery")
+
 <h2>Add</h2>
 @Html.ValidationSummary()
 @using (Html.BeginForm("SaveGame", "Logs"))
@@ -34,12 +34,15 @@
   <button class="btn btn-success submit">Submit</button>
 }
 
-<script>
-  $(document).ready(function () {
-    $(".submit").click(function () {
-          var league = $(".league").val();
-          var division = $(".division").val();
-      $("#rank").val(league + " " + division);
-        })
-  })
+@section scripts{
+@Scripts.Render("~/bundles/jqueryval")
+  <script>
+    $(document).ready(function () {
+      $(".submit").click(function () {
+        var league = $(".league").val();
+        var division = $(".division").val();
+        $("#rank").val(league + " " + division);
+      })
+    })
 </script>
+}

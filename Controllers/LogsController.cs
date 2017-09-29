@@ -27,22 +27,20 @@ namespace LogOfLegends.Controllers
         }
 
     public ActionResult ChangeGame(int id = 0) {
-      if (id == 0)
+      var game = new Game();
+      if (id != 0)
       {
-      }
-      else
-      {
-        var game = _context.Games.Single(g => g.Id == id);
+        game = _context.Games.Single(g => g.Id == id);
         return View("LogForm", game);
       }
-      return View("LogForm");
+      return View("LogForm", game);
     }
     [ValidateAntiForgeryToken]
     public ActionResult SaveGame(Game game) {
       if (!ModelState.IsValid) {
         return View("LogForm", game);
       }
-      if (game.Id == 0 || game.Id == null)
+      if (game.Id == 0)
       {
         game.DateEntered = DateTime.Now;
         _context.Games.Add(game);
